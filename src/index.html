@@ -10,27 +10,7 @@
 
     <link rel="stylesheet" href="css/style.min.css" />
 
-    <script
-      defer
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      defer
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script defer src="js/slick.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
-    />
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"
-    ></script>
-
-    <script defer src="js/script.js"></script>
+    
   </head>
 
   <body>
@@ -134,7 +114,7 @@
           Просто заполните форму заявки<br />
           и мы перезвоним вам в течении 10 минут
         </div>
-        <form class="feed-form" action="#">
+        <form id="consultation-form" class="feed-form" action="#">
           <input name="name" required placeholder="Ваше имя" type="text" />
           <input name="phone" required placeholder="Ваш телефон" type="tel" />
           <input name="email" required placeholder="Ваш E-mail" type="email" />
@@ -639,9 +619,9 @@
         <div class="modal__subtitle">Просто заполните форму заявки</div>
         <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
         <form class="feed-form feed-form_mt25" action="#">
-          <input name="name" required placeholder="Ваше имя" type="text" />
-          <input name="phone" required placeholder="Ваш телефон" type="tel" />
-          <input name="email" required placeholder="Ваш E-mail" type="email" />
+          <input name="name"  placeholder="Ваше имя" type="text" />
+          <input name="phone"  placeholder="Ваш телефон" type="tel" />
+          <input name="email"  placeholder="Ваш E-mail" type="email" />
 
           <button class="button button_submit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
         </form>
@@ -667,6 +647,22 @@
       </div>
 
     </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+    <script  src="js/slick.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
+    />
+    <script
+      
+      src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"
+    ></script>
+
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script defer src="js/script.js"></script>
 
   </body>
 </html>
