@@ -120,4 +120,30 @@ $(document).ready(function () {
 
     return false;
   });
+
+  // Smooth scroll and pageup
+  const targetSection = document.querySelector('.feed');
+
+  const obsCallback = function (entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        $('.pageup').fadeIn();
+      } else {
+        $('.pageup').fadeOut();
+      }
+    });
+  };
+
+  const obsOptions = {
+    root: null,
+    threshold: 0.1,
+  };
+  const observer = new IntersectionObserver(obsCallback, obsOptions);
+  observer.observe(targetSection);
+
+  $("a[href^='#']").click(function () {
+    const _href = $(this).attr('href');
+    $('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
+    return false;
+  });
 });
