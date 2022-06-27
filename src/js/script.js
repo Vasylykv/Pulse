@@ -141,9 +141,11 @@ $(document).ready(function () {
   const observer = new IntersectionObserver(obsCallback, obsOptions);
   observer.observe(targetSection);
 
-  $("a[href^='#']").click(function () {
+  $("a[href='#up']").click(function () {
     const _href = $(this).attr('href');
     $('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
     return false;
   });
+
+  new WOW().init();
 });

@@ -1,6 +1,7 @@
 .advantages {
   min-height: 473px;
   padding: 90px 0 65px 0;
+  background-color: #f6f6f6;
   &__header {
     font-weight: 700;
     font-size: 30px;
@@ -40,6 +41,16 @@
   &__icon {
     display: block;
     margin: 0 auto;
+    &_animated {
+      // animation-name: heartbeat;
+      // animation-duration: 1.5s;
+      // animation-timing-function: ease;
+      // animation-iteration-count: infinite;
+      animation: heartbeat 1.5s ease infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
   }
   span {
     color: #FF0000;
